@@ -22,19 +22,42 @@
 <body>
   <div class ="container">
     <div class ="row">
-      <div class ="col-lg-12 pagenationBar forumModule">
+      <div class ="col-lg-12 pagenationBar forumModule forumMargin">
         <a href="#">Home</a> <!--i class ="fa fa-angle-right paginationArrow"></i> <a href="#">Category</a> <i class ="fa fa-angle-right paginationArrow"></i> <a href="#">Discussion</a -->
       </div>
     </div>
 
 
     <div class ="row forumModule">
-
       <div class ="col-lg-12 columnPad">
-        <h1>Category Name <a class ="btn btn-primary themeButton" href="#">Create a new post</a></h1>
+        <div class="pullLeft">
+          <h1>Category Name</h1>
+        </div>
+        <div class="pullRight">
+          <a class ="btn btn-primary themeButton" href="#">Create a new post</a>
+        </div>
       </div>
-
     </div>
+
+    <div class ="row forumModule forumPad">
+      <table>
+        <thead>
+          <th>
+            Discussion
+          </th>
+          <th>
+            Author
+          </th>
+          <th>
+            Replies
+          </th>
+        </thead>
+        <tr>
+
+        </tr>
+      </table>
+    </div>
+
   </div>
 
 </body>

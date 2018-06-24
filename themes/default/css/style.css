@@ -3,7 +3,7 @@
   padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: red;
+  background-color: black;
   position: fixed;
   top: 0;
   left: 0;
@@ -23,7 +23,7 @@
 }
 
 .headerLogoText:hover {
-  color: #0000ff;
+  color: #ADD8E6;
   text-decoration: none;
   font-size: 1.7em;
   font-weight: 500;
@@ -40,14 +40,19 @@
   float: left;
   display: inline-block;
 }
-
+.vMiddle{
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  margin: auto;
+}
 .pullRight {
   float: right;
   display: inline-block;
 }
 
 .themeButton {
-  background-color: #0000ff;
+  background-color: #ADD8E6;
   color: white;
   border-color: black;
   border-width: thin;
@@ -73,8 +78,20 @@
 .forumModule{
   background-color: white;
   color: black;
+
+}
+
+.forumMargin{
   margin-bottom: 10px;
 }
+
+.forumPad{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
 .columnPad{
 margin: 5px;
 }
