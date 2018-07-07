@@ -11,7 +11,7 @@
     <div class="col-lg-12">
 
       <div class="pullLeft" style="margin-top:5px;">
-      <a class="headerLogoText" href="index.php" title="EsportsForum.com"><img class ="headerLogoImage" src="themes/default/images/logo.png">Forum</a>
+      <a class="headerLogoText" href="index.php" title="EsportsForum.com"><img class="headerLogoImage" src="themes/default/images/logo.png">Forum</a>
       </div>
 
       <div class="pullRight">
@@ -28,7 +28,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12 paginationBar forumModule forumMargin">
-        <a href="#">Home</a> <!--i class ="fa fa-angle-right paginationArrow"></i> <a href="#">Category</a> <i class ="fa fa-angle-right paginationArrow"></i> <a href="#">Discussion</a -->
+        <a href="#">Home</a>
       </div>
     </div>
 
@@ -37,69 +37,107 @@
 
     <div id="category_1" class ="row forumModule forumMargin">
       <a href="#" onclick="showPosts(1);">
-        <div class ="col-lg-12 columnPad">
+        <div class="col-lg-12 columnPad">
           <div class="pullLeft">
             <h1>Category Name</h1>
           </div>
           <div class="pullRight">
-            <a class="btn btn-primary themeButton" href="#">Create New Post</a>
+            <a id="cancelButton_1" class="btn btn-primary themeButton" href="#" onclick="createPost(1);">Create New Post</a>
           </div>
         </div>
       </a>
     </div>
 
-    <div id="category_posts1"class="row forumPad" style="display:none;">
-      <table class="forumTable">
-        <thead>
-          <th>
-            Discussion
-          </th>
-          <th>
-            Author
-          </th>
-          <th class="pullRight">
-            Replies
-          </th>
-        </thead>
+    <div id="new_post1" class="row forumPad" style="display:none;">
+      <div class="col-lg-12">
+        <form>
+          <div class="form-group">
+            Title
+            <input type="text" name="newPostTitle" class="form-control" size="40"></input>
+            <br/>
+            Body
+            <textarea class="newPostText form-control" name="newPostText" rows="10">test</textarea>
+          </div>
+        </form>
+      </div>
+    </div>
 
-        <tr class="forumModule">
-          <td>
-          <a href="#">  Discussion name here </a>
-          </td>
-          <td>
-            <a href="#">Imran</a>
-          </td>
-          <td class="pullRight">
-            10
-          </td>
-        </tr>
+    <div id="category_posts1" class="row forumPad" style="display:none;">
+      <div class="col-lg-12">
+        <table class="forumTable">
+          <thead>
+            <th>
+              Discussion
+            </th>
+            <th>
+              Author
+            </th>
+            <th class="pullRight">
+              Replies
+            </th>
+          </thead>
 
-        <tr class="forumModule">
-          <td>
-          <a href="#">  Discussion name here </a>
-          </td>
-          <td>
-            <a href="#">Imran</a>
-          </td>
-          <td class="pullRight">
-            10
-          </td>
-        </tr>
+          <tr class="forumModule">
+            <td>
+            <a href="#">  Discussion name here </a>
+            </td>
+            <td>
+              <a href="#">Imran</a>
+            </td>
+            <td class="pullRight">
+              10
+            </td>
+          </tr>
 
-      </table>
+          <tr class="forumModule">
+            <td>
+            <a href="#">  Discussion name here </a>
+            </td>
+            <td>
+              <a href="#">Imran</a>
+            </td>
+            <td class="pullRight">
+              10
+            </td>
+          </tr>
+
+        </table>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="pullRight" style="padding-right: 15px;">
+            <a class="label label-primary" href="#">View More</a>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div id="category_2" class ="row forumModule forumMargin">
       <a href="#" onclick="showPosts(2);">
-        <div class ="col-lg-12 columnPad">
+        <div class="col-lg-12 columnPad">
           <div class="pullLeft">
             <h1>Category Name</h1>
           </div>
           <div class="pullRight">
-            <a class="btn btn-primary themeButton" href="#">Create New Post</a>
+            <a id="cancelButton_2" class="btn btn-primary themeButton" href="#" onclick="createPost(2);">Create New Post</a>
           </div>
         </div>
       </a>
+    </div>
+
+    <div id="new_post2" class="row forumPad" style="display:none;">
+      <div class="col-lg-12">
+        <form>
+          <div class="form-group">
+            Title
+            <input type="text" name="newPostTitle" class="form-control" size="40"></input>
+            <br/>
+            Body
+            <textarea class="newPostText form-control" name="newPostText" rows="10">test</textarea>
+          </div>
+        </form>
+      </div>
     </div>
 
     <div id="category_posts2"class="row forumPad" style="display:none;">
